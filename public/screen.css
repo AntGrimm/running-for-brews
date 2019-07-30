@@ -9,4 +9,116 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  background-color: #7388ad;
+}
+
+.page-title{
+  color:rgb(93, 114, 114);
+  border:5px groove orange;
+  padding: 2rem;
+  text-align: center;
+  background: url(https://i.pinimg.com/originals/86/84/78/8684786ae27fbccae36e9bbc264fb6ec.jpg);
+}
+
+.sub-header{
+  color:rgb(117, 80, 11);
+  background-color: rgba(122, 86, 62, 0.452);
+  border:5px groove orange;
+  padding: 1rem;
+  margin: 0.25rem;
+  text-align: center;
+  font-style: italic;
+}
+
+nav ul{ 
+  list-style: none;
+  display: flex;
+  width: 80%;
+  text-align: center;
+}
+
+nav ul li {
+    color:rgb(126, 84, 30);
+    background-color: rgba(122, 86, 62, 0.452);
+    border:5px groove orange;
+    padding: 1rem;
+    margin: 0.25rem;
+}
+
+.menu-item1 {
+  color: rgb(27, 223, 223);
+  text-align: center;
+}
+
+.menu-item2 {
+  color: rgba(30, 97, 46, 0.521);
+  text-align: center;
+}
+
+.menu-item3 {
+  color: rgb(70, 36, 150);
+  text-align: center;
+}
+
+.menu-item4 {
+  color: rgb(190, 78, 102);
+  text-align: center;
+}
+
+.menu-item5 {
+  color: rgb(130, 143, 17);
+  text-align: center;
+}
+
+.What-is-running-for-brews header, .do-not-like-running header, .do-not-like-beer header, .host-cities header{
+  background-color: rgba(122, 86, 62, 0.452);
+  color: rgb(126, 84, 30);
+  padding: 1rem 1rem 1rem 1rem;
+  margin: 1rem;
+  border: groove orange;
+  text-align: center;
+}
+
+.What-is-running-for-brews section, .do-not-like-running section, .do-not-like-beer section, .host-cities section{
+  text-align: center;
+  color: blue;
+  margin: 1rem;
+  padding: 1rem 1rem 1rem 1rem;
+  display: flex;
+} 
+
+.photo1{
+  display: block;
+  margin-left: 100px;
+  margin-right: auto;
+  height: 300px;
+  width: auto;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.photo2{
+  display: block;
+  margin-left: auto;
+  margin-right: 100px;
+  height: 300px;
+  width: auto;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.photo3{
+  display: block;
+  margin-left: 100px;
+  margin-right: auto;
+  height: 300px;
+  width: auto;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.photo4{
+  display: block;
+  margin-left: 100px;
+  margin-right: auto;
+  height: 300px;
+  width: auto;
+  padding: 1rem 1rem 1rem 1rem;
 }
