@@ -9,97 +9,139 @@ html {
 body {
   margin: 0;
   min-height: 100%;
-  background-color: #7388ad;
+  background: url(https://i.pinimg.com/originals/86/84/78/8684786ae27fbccae36e9bbc264fb6ec.jpg);
 }
 
 .page-title{
   color:rgb(93, 114, 114);
   border:5px groove orange;
+  width: 90%;
   padding: 2rem;
   text-align: center;
-  background: url(https://i.pinimg.com/originals/86/84/78/8684786ae27fbccae36e9bbc264fb6ec.jpg);
+  background-color: rgb(44, 199, 165);
+  -webkit-animation-name: headerAnimation;
+  -webkit-animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-name: headerAnimation;
+  animation-duration: 4s;
+  justify-content: baseline;
+}
+
+@keyframes headerAnimation {
+  from {background-color: rgb(44, 199, 165);}
+  to {background-color: rgb(114, 109, 161);}
 }
 
 .sub-header{
   color:rgb(117, 80, 11);
-  background-color: rgba(122, 86, 62, 0.452);
+  background-color: rgb(44, 199, 165);
+  -webkit-animation-name: subHeaderAnimation;
+  -webkit-animation-duration: 5s;
+  animation-name: subHeaderAnimation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
   border:5px groove orange;
   padding: 1rem;
   margin: 0.25rem;
+  width: 90%;
   text-align: center;
   font-style: italic;
+  justify-content: baseline;
+}
+
+@keyframes subHeaderAnimation {
+  from {background-color: rgb(44, 199, 165);}
+  to {background-color: rgb(153, 100, 150);}
 }
 
 nav ul{ 
   list-style: none;
   display: flex;
-  width: 80%;
-  text-align: center;
+  width: 90%;
+  justify-content: center;
 }
 
 nav ul li {
     color:rgb(126, 84, 30);
-    background-color: rgba(122, 86, 62, 0.452);
+    background-color: rgb(44, 199, 165);
     border:5px groove orange;
     padding: 1rem;
     margin: 0.25rem;
 }
 
 .menu-item1 {
-  color: rgb(27, 223, 223);
-  text-align: center;
+  color: rgb(223, 122, 27);
+  -webkit-animation-name: menuItem1Animation;
+  -webkit-animation-duration: 5s;
+  animation-name: menuItem1Animation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes menuItem1Animation {
+  from {color: rgb(223, 122, 27);}
+  to {color: rgb(199, 27, 27);}
 }
 
 .menu-item2 {
-  color: rgba(30, 97, 46, 0.521);
-  text-align: center;
+  color: rgba(97, 30, 94, 0.521);
 }
 
 .menu-item3 {
   color: rgb(70, 36, 150);
-  text-align: center;
 }
 
 .menu-item4 {
   color: rgb(190, 78, 102);
-  text-align: center;
 }
 
 .menu-item5 {
-  color: rgb(130, 143, 17);
-  text-align: center;
+  color: rgb(143, 17, 17);
 }
 
 .What-is-running-for-brews header, .do-not-like-running header, .do-not-like-beer header, .host-cities header{
-  background-color: rgba(122, 86, 62, 0.452);
-  color: rgb(126, 84, 30);
+  background-color: rgb(44, 199, 165);
+  color: rgb(70, 40, 153);
+  width: 90%;
   padding: 1rem 1rem 1rem 1rem;
   margin: 1rem;
   border: groove orange;
   text-align: center;
+  justify-content: baseline;
+}
+
+.What-is-running-for-brews h2, .do-not-like-running h2, .do-not-like-beer h2, .host-cities h2{
+  background-color: rgb(44, 199, 165);
+  color: rgb(70, 40, 153);
+  padding: 1rem 1rem 1rem 1rem;
+  width: 90%;
+  margin: 1rem;
+  border: groove orange;
+  text-align: center;
+  justify-content: baseline;
 }
 
 .What-is-running-for-brews section, .do-not-like-running section, .do-not-like-beer section, .host-cities section{
-  text-align: center;
-  color: blue;
+  text-align: left;
+  color: rgb(69, 70, 161);
   margin: 1rem;
   padding: 1rem 1rem 1rem 1rem;
   display: flex;
 } 
 
-.photo1{
+/* .photo1{
   display: block;
-  margin-left: 100px;
+  margin-left: 200px;
   margin-right: auto;
   height: 300px;
   width: auto;
   padding: 1rem 1rem 1rem 1rem;
-}
+} */
 
 .photo2{
   display: block;
-  margin-left: auto;
-  margin-right: 100px;
+  margin-left: 300px;
+  margin-right: auto;
   height: 300px;
   width: auto;
   padding: 1rem 1rem 1rem 1rem;
@@ -107,7 +149,7 @@ nav ul li {
 
 .photo3{
   display: block;
-  margin-left: 100px;
+  margin-left: 400px;
   margin-right: auto;
   height: 300px;
   width: auto;
@@ -116,9 +158,44 @@ nav ul li {
 
 .photo4{
   display: block;
-  margin-left: 100px;
+  margin-left: 500px;
   margin-right: auto;
   height: 300px;
   width: auto;
   padding: 1rem 1rem 1rem 1rem;
+}
+
+/* .photo5{
+  display: block;
+  margin-left: 200px;
+  margin-right: auto;
+  height: 300px;
+  width: auto;
+  padding: 1rem 1rem 1rem 1rem;
+} */
+
+/* Fade in and out during hover state, switches images */
+
+#cf {
+  position:relative;
+  padding-bottom: 100px;
+  height:300px;
+  width:auto;
+  margin:auto;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+}
+
+#cf img.photo5:hover {
+  opacity:0;
+}
+
+#container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
